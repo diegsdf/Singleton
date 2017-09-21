@@ -1,0 +1,27 @@
+
+package Singleton;
+
+
+public class CriaPoolDeRecursos 
+      {
+    private static CriaPoolDeRecursos _pool;
+    //O construtor foi definido como sendo privado para evitar o uso do new
+   
+    private CriaPoolDeRecursos() { }
+   
+    public static CriaPoolDeRecursos getPoolDeRecursos()
+    {
+     
+     if (_pool == null)
+     { 
+      _pool = new CriaPoolDeRecursos();
+      System.out.println("Criado um Teste para a aplicação.");
+     }
+     else
+     {
+       System.out.print("Já existe um teste de aplicação.");
+      }
+      return _pool;
+   }
+  }
+

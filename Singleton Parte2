@@ -1,0 +1,21 @@
+
+package Singleton;
+
+
+public class SingletonPatternEx 
+    
+{
+     public static void main(String[] args)
+     {
+      
+       System.out.println("Teste.");
+       CriaPoolDeRecursos p1 = CriaPoolDeRecursos.getPoolDeRecursos();
+       System.out.println("Outro Teste.");
+       CriaPoolDeRecursos p2 = CriaPoolDeRecursos.getPoolDeRecursos();
+   
+       if (p1 == p2)
+       {
+          System.out.println("p1 e p2 são as mesmas instâncias.");
+        }
+   }
+  }
